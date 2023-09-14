@@ -1,0 +1,35 @@
+Nodes	Values
+HAV	0
+HBV	1
+HCV	2
+HDV	3
+HEV	4
+HPV	5
+EBV	6
+HTLV	7
+KSHV	8
+MCV	9
+Hodgkin's lymphoma	10
+B lymphomas	11
+ATLL	12
+LLA	13
+T-LLA	14
+Acute myeloid leukemia	15
+Cervical cancer	16
+Oropharyngeal cancer	17
+Penile cancer	18
+Hepatocellular carcinoma	19
+Yohan	20
+Kamilla	21
+Debora	22
+Pedro	23
+Adriana	24
+Yuri	25
+Adriel	26
+Julia	27
+Leticia	28
+Olaide	29
+Kaposi's Sarcoma	30
+Merkel cell carcinoma	31
+SARS-CoV 2	32
+CMV	33

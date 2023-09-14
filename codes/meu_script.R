@@ -1,5 +1,5 @@
 # interferome-how-to -----------------------------------------------------------
-# GitHub repository: https://github.com/nauss20/interferome-how-to.git
+# GitHub repository: https://github.com/nauss20/interferome-how-to
 # scripts for transcriptome analyses.
 
 # DEG FILTERING ----------------------------------------------------------------
@@ -10,6 +10,7 @@
 # import data
 original_name <- "./data/GSE25001_Whole/GSE25001.100_4to8d_vs_34_convalescent.tsv"
 table <- read.table(file = original_name, header = TRUE, sep = "\t", dec = ".", quote = "")
+table <- read.table(file = "./data/GSE101718.top.table.tsv", header = TRUE, sep = "\t", dec = ".", quote = "")
 
 # subset by adjusted p-value < 0.05
 p_filtered <- subset(x = table, table$adj.P.Val < 0.05)
@@ -17,7 +18,7 @@ p_filtered <- subset(x = table, table$adj.P.Val < 0.05)
 p_FC_filtered <- subset(x = p_filtered, 
                         subset = (p_filtered$logFC < -1 | p_filtered$logFC > 1))
 # remove duplicates by gene symbol, after filtering
-DEGs <- p_FC_filtered[!duplicated(p_FC_filtered$Gene.symbol), ]
+DEGs <- p_FC_filtered[!duplicated(p_FC_filtered$ID), ]
 
 # remove empty values
 if (any(nchar(DEGs$Gene.symbol) == 0) == TRUE){
