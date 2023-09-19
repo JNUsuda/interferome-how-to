@@ -11,8 +11,3 @@ Encoding: UTF-8
 
 RnwWeave: Sweave
 LaTeX: pdfLaTeX
-<<<<<<< HEAD
-
-SpellingDictionary: en_US
-=======
->>>>>>> 7c497802a5b61e63ec7a86cde642d5a4d893fa25
